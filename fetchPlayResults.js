@@ -46,7 +46,7 @@ for (let i = 0; i < 5; i++) {
 const url = new Blob([JSON.stringify(resList)], {type: 'application/json'})
 const a = document.createElement('a')
 a.href = URL.createObjectURL(url)
-a.download = 'playResults.json'
+a.download = 'playResults-' + Date.now() + '.json'
 document.body.appendChild(a)
 
 a.click()
