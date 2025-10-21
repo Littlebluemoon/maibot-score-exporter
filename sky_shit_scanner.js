@@ -102,7 +102,10 @@ for (let i=0; i<29; i++)	{
 		let cell1 = document.createElement('td');
 		cell1.textContent = skyStreetSongTitle[i];
 		let cell2 = document.createElement('td');
-		cell2.textContent = lastPlayed[i];
+		if (lastPlayed[i].getTime() == 0)
+			cell2.textContent = "Not Played";
+		else
+			cell2.textContent = lastPlayed[i];
 		row.appendChild(cell1);
 		row.appendChild(cell2);
 		tbody.appendChild(row);

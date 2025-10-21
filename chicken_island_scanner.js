@@ -82,7 +82,7 @@ for (let i=0; i<songs; i++)	{
 		let cell1 = document.createElement('td');
 		cell1.textContent = chickenChihoSongTitle[i];
 		let cell2 = document.createElement('td');
-		if (lastPlayed[i] == new Date(0))
+		if (lastPlayed[i].getTime() == 0)
 			cell2.textContent = "Not Played";
 		else
 			cell2.textContent = lastPlayed[i];
