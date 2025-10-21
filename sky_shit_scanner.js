@@ -1,6 +1,6 @@
 javascript:(async()=>{skyStreetURLPrefix = "https://maimaidx-eng.com/maimai-mobile/record/musicDetail/?idx="
 
-skyStreetDate = new Date("2025-01-16T00:00:00+08:00")
+skyStreetDate = new Date("2025-01-16T00:00:00+09:00")
 
 skyStreetURLS = [
 "74e6c63f6886ac162c1c051716a0fb6faf844cc9fe3fc0b80b2d11efd23857cb8a75df02a65fa5e653f9c999177aa60065f168d2ef71e1a6257fd6e401679f3a4ubucS0Yrev7%2FlX75AZrssBuGHLIMyj%2FGvvFfih8Aeo%3D",
@@ -69,7 +69,7 @@ for (let i=0; i<29; i++)	{
 	else{
 		maxLastPlay = new Date(playDates[0].rows[0].cells[1].textContent.trim());
 		for (let j=1; j<playDates.length; j++)	{
-			dateString = playDates[j].rows[0].cells[1].textContent.trim().replace(' ', 'T').replace(/\//g, "-") + ':00+08:00'
+			dateString = playDates[j].rows[0].cells[1].textContent.trim().replace(' ', 'T').replace(/\//g, "-") + ':00+09:00'
 			if (new Date(dateString) >= maxLastPlay)
 				maxLastPlay = new Date(dateString);
 		}
