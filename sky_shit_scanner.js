@@ -118,7 +118,7 @@ style.textContent = `
   th, td { border: 1px solid black; padding: 6px; }
 `;
 playTable.head.appendChild(style);
-playTable.appendChild(tbl);
+playTable.body.appendChild(tbl);
 
 const htmlTableContent = '<!DOCTYPE html>\n' + playTable.documentElement.outerHTML;
 const blob = new Blob([htmlTableContent], { type: 'text/html' });
