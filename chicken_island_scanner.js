@@ -57,7 +57,7 @@ for (let i=0; i<songs; i++)	{
 	}
 }
 
-const playTable = document.implementation.createHTMLDocument("My Blank Document");
+const playTable = document.implementation.createHTMLDocument("Unplayed Red Gate Songs");
 const tbl = playTable.createElement('table');
 tbl.style.border = '1px solid black';
 // Headers

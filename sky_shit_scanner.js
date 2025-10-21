@@ -77,7 +77,7 @@ for (let i=0; i<29; i++)	{
 	}
 }
 
-const playTable = document.implementation.createHTMLDocument("My Blank Document");
+const playTable = document.implementation.createHTMLDocument("Unplayed Blue Gate Songs");
 const tbl = playTable.createElement('table');
 tbl.style.border = '1px solid black';
 // Headers
