@@ -99,9 +99,9 @@ for (let i=0; i<29; i++)	{
 		continue;
 	else	{
 		let row = tbody.createElement('tr');
-		let cell1 = row.createElement('td');
+		let cell1 = document.createElement('td');
 		cell1.textContent = skyStreetSongTitle[i];
-		let cell2 = row.createElement('td');
+		let cell2 = document.createElement('td');
 		cell2.textContent = lastPlayed[i];
 		row.appendChild(cell1);
 		row.appendChild(cell2);
