@@ -1,4 +1,4 @@
-skyStreetURLPrefix = "https://maimaidx-eng.com/maimai-mobile/record/musicDetail/?idx="
+javascript:(async()=>{skyStreetURLPrefix = "https://maimaidx-eng.com/maimai-mobile/record/musicDetail/?idx="
 
 skyStreetDate = new Date("2025-01-16T00:00:00+08:00")
 
@@ -125,3 +125,4 @@ const a = document.createElement('a');
 a.href = URL.createObjectURL(blob);
 a.download = 'playlist_table.html'; // filename
 a.click();
+})();
